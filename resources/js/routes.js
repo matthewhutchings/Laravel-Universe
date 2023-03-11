@@ -1,6 +1,19 @@
 export default [
     { path: '/', redirect: '/requests' },
 
+
+    {
+        path: '/overview',
+        name: 'overview',
+        component: require('./screens/overview/index').default,
+    },
+
+    {
+        path: '/dashboards/:slug',
+        name: 'view-dashboard',
+        component: require('./screens/dashboards/index').default,
+    },
+
     {
         path: '/mail/:id',
         name: 'mail-preview',

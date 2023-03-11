@@ -2,11 +2,24 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
+// Dashboards
+Route::get('/telescope-api/dashboards/{slug}', 'DashboardController@show');
+Route::post('/telescope-api/overview', 'OverviewController@request');
+Route::post('/telescope-api/overview/get-data', 'OverviewController@getData');
+
+
+
+
 // Mail entries...
 Route::post('/telescope-api/mail', 'MailController@index');
 Route::get('/telescope-api/mail/{telescopeEntryId}', 'MailController@show');
 Route::get('/telescope-api/mail/{telescopeEntryId}/preview', 'MailHtmlController@show');
 Route::get('/telescope-api/mail/{telescopeEntryId}/download', 'MailEmlController@show');
+
+
+
 
 // Exception entries...
 Route::post('/telescope-api/exceptions', 'ExceptionController@index');

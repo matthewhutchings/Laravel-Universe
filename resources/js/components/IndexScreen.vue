@@ -41,7 +41,7 @@
          * Prepare the component.
          */
         mounted() {
-            document.title = this.title + " - Telescope";
+            document.title = this.title + " - Universe";
 
             this.familyHash = this.$route.query.family_hash || '';
 

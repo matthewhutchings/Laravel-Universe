@@ -124,7 +124,9 @@
             redis() {
                 return _.filter(this.batch, {type: 'redis'});
             },
-
+            dashboards() {
+                return _.filter(this.batch, {type: 'redis'});
+            },
             mails() {
                 return _.filter(this.batch, {type: 'mail'});
             },

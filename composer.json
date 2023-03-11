@@ -1,22 +1,19 @@
 {
     "name": "fewzen/universe",
-    "description": "An elegant debug assistant for the Laravel framework.",
+    "description": "An elegant real time data visulisation platform for the Laravel framework.",
     "keywords": ["laravel", "monitoring", "debugging"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
-        },
-        {
-            "name": "Mohamed Said",
-            "email": "mohamed@laravel.com"
+            "name": "Matthew Hutchings",
+            "email": "matthew@fewzen.com"
         }
     ],
     "require": {
         "php": "^8.0",
         "ext-json": "*",
         "laravel/framework": "^8.37|^9.0|^10.0",
+        "orhanerday/open-ai": "^4.7",
         "symfony/var-dumper": "^5.0|^6.0"
     },
     "require-dev": {

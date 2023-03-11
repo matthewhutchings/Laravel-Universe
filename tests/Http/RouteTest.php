@@ -24,6 +24,9 @@ class RouteTest extends FeatureTestCase
     public function telescopeIndexRoutesProvider()
     {
         return [
+            'Dashboards' => ['/telescope/telescope-api/dashboards', EntryType::DASHBOARDS],
+
+
             'Mail' => ['/telescope/telescope-api/mail', EntryType::MAIL],
             'Exceptions' => ['/telescope/telescope-api/exceptions', EntryType::EXCEPTION],
             'Dumps' => ['/telescope/telescope-api/dumps', EntryType::DUMP],
@@ -75,8 +78,8 @@ class RouteTest extends FeatureTestCase
             PHPUnit::assertEquals(
                 $expected,
                 $actualValue = data_get($jsonResponse, $key),
-                "Failed asserting that [$actualValue] matches expected [$expected].".PHP_EOL.PHP_EOL.
-                json_encode($jsonResponse)
+                "Failed asserting that [$actualValue] matches expected [$expected]." . PHP_EOL . PHP_EOL .
+                    json_encode($jsonResponse)
             );
 
             return $this;
